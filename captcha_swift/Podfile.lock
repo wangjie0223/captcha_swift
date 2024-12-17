@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.9.1)
+  - CryptoSwift (1.5.1)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.9.0)
+  - CryptoSwift (~> 1.0)
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CryptoSwift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  CryptoSwift: c4f2debceb38bf44c80659afe009f71e23e4a082
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: a586378b012d3e7582691021afcba0c70e78b3cf
+
+COCOAPODS: 1.15.2
