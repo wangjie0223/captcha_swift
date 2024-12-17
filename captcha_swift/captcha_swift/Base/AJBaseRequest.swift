@@ -10,7 +10,6 @@ import UIKit
 import Foundation
 import Alamofire
 import SwiftyJSON
-//import HandyJSON
 enum MethodType{
     case get
     case post
@@ -22,19 +21,8 @@ enum RequestResult{
 }
 private let shareInstance = AJBaseRequest()
 private var timeoutInterval: TimeInterval = 60  //请求超时时间
-//IP地址
-//let kServerBaseUrl = "https://captcha.anji-plus.com/api"
-//let kServerBaseUrl = "http://10.108.11.46:8080/api"
-//let kServerBaseUrl = "https://captcha.anji-plus.com/captcha-api"//
 
-
-let kServerBaseUrl = "https://47.122.5.230:8089/user/api/v1"// https://47.122.5.230:8089/user/api/v1/captcha/get
-
-
-//let kServerBaseUrl = "http://10.108.12.20:8086/"
-//let kServerBaseUrl = "http://127.0.0.1:8080/"
-
-
+let kServerBaseUrl = "https://47.122.5.230:8089/user/api/v1"
 
 class AJBaseRequest {
     class var sharedInstance: AJBaseRequest {
@@ -50,32 +38,14 @@ extension AJBaseRequest {
         
         let serverTrustManager = ServerTrustManager(allHostsMustBeEvaluated: false,
                                                             evaluators: ["47.122.5.230": DisabledTrustEvaluator()])
-                
-        
-        
-
-        
-        
-        
-//                let session = Session(configuration: configuration,
-//                                      startRequestsImmediately: false,
-//                                      serverTrustManager: serverTrustManager)
-        
-        
-        
         return Session.init(configuration: configuration, serverTrustManager: serverTrustManager)
     }()
     
     
     
     func baseRequest(url: String, method: MethodType = .post, reqData: [String : Any], autoShowMessage: Bool = true, success: @escaping (Any?) -> (), failure: @escaping (Error) -> ()){
-//        let token = ""
-//        let timeInterval = NSDate().timeIntervalSince1970 * 1000
-//
-//        let time = Int64(timeInterval)
-//        let sign = self.getMD5Sign(reqData, time: String(time), token: token)
+
         let params: [String : Any] = reqData
-//        AJBaseRequest.aManager.delegate.sessionDidReceiveChallenge = CertificateTrust.alamofireCertificateTrust
         let headers = ["Content-Type":"application/json"]
         let _method = method == MethodType.post ? HTTPMethod.post : HTTPMethod.get;
         let reqUrlStr = "\(kServerBaseUrl)\(url)"
@@ -85,9 +55,6 @@ extension AJBaseRequest {
         
         
         AJBaseRequest.aManager.request(reqUrlStr, method: _method, parameters: params.compactMapValues({ $0 }), encoding: JSONEncoding.default, headers: HTTPHeaders(headers)).responseJSON { (response) in
-            
-            
-            print("6666", response)
             
             switch response.result {
             case .success:

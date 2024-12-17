@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,6 @@
 		DF93C6722459390200FC2D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF93C6702459390200FC2D0F /* LaunchScreen.storyboard */; };
 		DF93C67A24596F4E00FC2D0F /* CaptchaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF93C67924596F4E00FC2D0F /* CaptchaView.swift */; };
 		DF93C67C245986D400FC2D0F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF93C67B245986D400FC2D0F /* UIView+Extension.swift */; };
-		DFA920DF24664C8300EC0383 /* CertificateTrust.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA920DE24664C8300EC0383 /* CertificateTrust.swift */; };
 		DFBCF133245A709B00C6013A /* ESConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBCF132245A709B00C6013A /* ESConfig.swift */; };
 		DFBCF139245A751D00C6013A /* AJBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBCF136245A751C00C6013A /* AJBaseRequest.swift */; };
 		DFBCF13C245A792400C6013A /* CaptchaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBCF13B245A792400C6013A /* CaptchaRequest.swift */; };
@@ -36,7 +35,6 @@
 		DF93C6732459390200FC2D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF93C67924596F4E00FC2D0F /* CaptchaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaView.swift; sourceTree = "<group>"; };
 		DF93C67B245986D400FC2D0F /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		DFA920DE24664C8300EC0383 /* CertificateTrust.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CertificateTrust.swift; sourceTree = "<group>"; };
 		DFBCF132245A709B00C6013A /* ESConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESConfig.swift; sourceTree = "<group>"; };
 		DFBCF136245A751C00C6013A /* AJBaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AJBaseRequest.swift; sourceTree = "<group>"; };
 		DFBCF13B245A792400C6013A /* CaptchaRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaRequest.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 		DFBCF134245A751C00C6013A /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				DFA920DE24664C8300EC0383 /* CertificateTrust.swift */,
 				DFBCF132245A709B00C6013A /* ESConfig.swift */,
 				DFBCF136245A751C00C6013A /* AJBaseRequest.swift */,
 				DFBCF13B245A792400C6013A /* CaptchaRequest.swift */,
@@ -249,7 +246,6 @@
 				DF93C6682459390100FC2D0F /* SceneDelegate.swift in Sources */,
 				DF93C67C245986D400FC2D0F /* UIView+Extension.swift in Sources */,
 				DFBCF139245A751D00C6013A /* AJBaseRequest.swift in Sources */,
-				DFA920DF24664C8300EC0383 /* CertificateTrust.swift in Sources */,
 				DFBCF13C245A792400C6013A /* CaptchaRequest.swift in Sources */,
 				DF93C67A24596F4E00FC2D0F /* CaptchaView.swift in Sources */,
 				DFBCF133245A709B00C6013A /* ESConfig.swift in Sources */,
